@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #D1DDE9;
+}
+
+.form{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 50%;
+    height: 80vh;
+    margin: 0 auto;
+    border: 3px solid black;
+    text-align: center;
+    background-color: #336699;
+}
+
+h1{
+    margin: 50px;
+    color: goldenrod;
+}
+
+.value1, .value2, .result{
+    margin: 50px;
+}
+
+.button-group{
+    margin: 50px 50px 20px 50px;
+}
+
+button{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #6DA2DF;
+}
+
+input{
+    padding: 10px;
+    text-align: center;
+    background-color: #6DA2DF;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+}
