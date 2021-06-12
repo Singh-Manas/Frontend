@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    background-color: #00A99E;;    
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    border: 10px solid #67D2C8;
+    border-radius: 100%;
+    position: relative;
+    top: 100px;
+    left: 30%;
+    background-color: #DBFFFF;
+}
+
+.top{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #262626;
+    left: 50%;
+}
+
+.bottom{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #262626;
+    left: 50%;
+    bottom: 0;
+}
+
+.right{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #262626;
+    bottom: 50%;
+    right: 8px;
+    transform: rotate(90deg);
+}
+
+.left{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background: #262626;
+    bottom: 50%;
+    left: 8px;
+    transform: rotate(90deg);
+}
+
+.hour{
+    position: absolute;
+     height: 100px;
+     width: 12px;
+     left: 50%;
+     bottom: 55%;
+     background:black;
+    transform-origin: bottom;
+    transform: rotate(150deg);
+    animation: sec_anim 216000s linear infinite;
+ }
+
+ .min{
+    position: absolute;
+    height: 180px;
+    width: 12px;
+    left: 50%;
+    bottom: 55%;
+    background:black;
+    transform-origin: bottom;
+    transform: rotate(-60deg);
+    animation: sec_anim 3600s linear infinite;
+ }
+
+ .sec{
+    position: absolute;
+    height: 180px;
+    width: 5px;
+    left: 50%;
+    bottom: 55%;
+    background:red;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    animation: sec_anim 60s linear infinite;
+ }
+
+ @keyframes sec_anim{
+    to{transform:rotate(360deg);}   
+}
