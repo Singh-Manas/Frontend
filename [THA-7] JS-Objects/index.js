@@ -58,7 +58,7 @@ function compareID(a, b) {
     // When we want a should come before b, then result should be negative
     if(a.libraryID < b.libraryID) {
         return -1;
-    // When we want a should come after b, then result should be negative
+    // When we want a should come after b, then result should be positive
     } else if(a.libraryID > b.libraryID) {
         return 1;
     // a and b should come in same order
