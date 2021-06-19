@@ -1,0 +1,67 @@
+/* Changing the background color and font of the whole body */
+body {
+    background-color: #3f6172;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Setting the Container to be Grid. By default, the grid aligns elements row wise. */
+.container {
+    display: grid;
+    place-items: center;
+}
+/* Setting the Screen Image by rounding the edges on the top left and top right only. */
+.screen {
+    width:30vw;
+    height:12px;
+    background-color: #020a1b;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+/* Showing the Seat Info by aligning elements using flex box. */
+.seatInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+/* Changing some Font Size and Weight of Text in seatInfo */
+.bookedSeats {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.remainingSeats {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+/* Generating All Seats in the form of a grid. */
+.allSeats {
+    position: relative;
+    margin-top: 60px;
+    width: 400px;
+    height: 400px;
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px;
+    border: 4px solid #1E3A73;
+}
+/* Setting the Seats Color when a seat is selected or not.  */
+.seats {
+    background-color: #183442;
+    border: 0.1px solid #1E3A73;
+}
+
+.seats:hover {
+    cursor: pointer;
+    background-color: #01161d;
+    border: 0.1px solid #15292F;
+}
+
+.seatsClicked {
+    background-color: #01161d;
+}
+
+.seatsClicked:hover {
+    background-color: #15292F;
+}
