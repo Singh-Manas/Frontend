@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="start">
+            <h2>Test Your Knowledge with CSS Quiz</h2>
+            <button class="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz">
+            <div class="question">What does CSS stands for?</div>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="choice" id="ans1" class="radio">
+                    <label for="ans1" id="option1">Colorful Style Sheets</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="choice" id="ans2" class="radio">
+                    <label for="ans2" id="option2">Cascading Style Sheets</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="choice" id="ans3" class="radio">
+                    <label for="ans3" id="option3">Creative Style Sheets</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="choice" id="ans4" class="radio">
+                    <label for="ans4" id="option4">Computer Style Sheets</label>
+                </div>
+            </div>
+        </div> 
+
+        <div class="btnGroup">
+            <div class="button">
+                <button class="reset">Reset</button>
+            </div>
+            <div class="button">
+                <button class="previous">Previous</button>
+            </div>
+            <div class="button">
+                <button class="next">Next</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <h2>Congratulations!!! You have completed the quiz</h2>
+            <h2>Your score is <span class="score">5</span></h2>
+            <button class="retry">Retry</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Changing default margin, padding and box-sizing of elements. Default box-sizing value is content-box. In content-box the values of border and padding of element is added extra to the element. */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Changing default background color and font family of body. */
+body {
+    background-color: #E3D8F1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5D576B;
+}
+/* Giving width and height to container and aligning items inside container according to flexbox. */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* Setting direction of flexbox. */
+    flex-direction: column; 
+    /* Aligning items to the center.     */
+    align-items: center;    
+    /* Distributing even space among elements of container. */
+    justify-content: space-around;  
+}
+
+.start {
+    /* width: 70%;
+    height: 70%; */
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start > h2 {
+    font-size: 40px;
+}
+
+.start-btn {
+    margin-top: 20px;
+}
+
+.quiz {
+    /* position: absolute; */
+    width: 27%;
+    height: 40%;
+    /* left: 40%; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.question {
+    /* margin-left: 30%; */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.options {
+    font-size: 24px;
+}
+radio {
+    margin-right: 20px;
+}
+
+.btnGroup {
+    width: 30%;
+    /* height: 20%; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+button{
+    /* height: 50%; */
+    background-color: #5D576B;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: #5D576B;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.result {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+.retry {
+    width: 30%;
+    background-color: #5D576B;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
